@@ -1,15 +1,20 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section id="laboral-experience">
-    <h2 class="section-title">Experience</h2>
-    <p>Make a timeline using v-timeline</p>
+  <section id="experience">
+    <article>
+      <h2 class="section-title">Experience</h2>
+      <div class="experience-container first">
+        <p>HMH</p>
+        <p>FreeWay</p>
+        <p>Sonatafy</p>
+      </div>
+    </article>
   </section>
 </template>
 
 <style lang="sass" scoped>
-#laboral-experience
+#experience
   position: relative
-  background: salmon
   height: 500px
 </style>

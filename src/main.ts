@@ -1,6 +1,8 @@
 import './assets/sass/style.sass'
 // import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
+import 'aos/dist/aos.css'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 

@@ -10,7 +10,7 @@
       <div class="d-flex">© 2023 Erodstar - All rights reserved.</div>
       <div class="d-flex">
         <p class="mr-4">Powered by</p>
-        <img src="../assets/logo.svg" alt="vue logo" width="20" height="20" />
+        <img src="../assets/images/vue-logo.svg" alt="vue logo" width="20" height="20" />
       </div>
     </div>
   </v-footer>

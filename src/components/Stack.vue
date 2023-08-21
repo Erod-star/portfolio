@@ -1,44 +1,44 @@
 <script setup lang="ts">
 import SkillCard from './SkillCard.vue'
 const frontendSkills = [
-  'HTML',
-  'CSS',
-  'JAVASCRIPT',
-  'TYPESCRIPT',
-  'VUE',
-  'NUXT',
-  'REACT',
-  'SASS',
-  'FLUTTER',
-  'BOOTSTRAP',
-  'CYPRESS'
+  'html.svg',
+  'css.svg',
+  'javascript.svg',
+  'typescript.svg',
+  'vue.svg',
+  'react.svg',
+  'nuxt.svg',
+  'sass.svg',
+  'flutter.svg',
+  'bootstrap.svg',
+  'cypress.svg'
 ]
-const backendSkills = ['NODE', 'GRAPHQL', 'MYSQL', 'POSTGRES', 'JEST']
-const otherSkills = ['GIT', 'GITHUB', 'GITLAB', 'FIGMA', 'AWS']
+const backendSkills = ['node.svg', 'graphql.svg', 'mysql.svg', 'postgresql.svg', 'jest.svg']
+const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
 </script>
 
 <template>
   <section id="stack" class="section">
     <article>
       <h2 class="section-title">Stack</h2>
-      <div class="skills first">
+      <div class="skills first" data-aos="fade-up">
         <h3 class="skills__title">Frontend</h3>
         <div class="skills__container">
-          <SkillCard v-for="skill in frontendSkills" :src="skill" />
+          <SkillCard v-for="skill in frontendSkills" :imgName="skill" />
         </div>
       </div>
 
-      <div class="skills">
+      <div class="skills" data-aos="fade-up">
         <h3 class="skills__title">Backend</h3>
-        <div class="d-flex justify-center skills__container">
-          <SkillCard v-for="skill in backendSkills" :src="skill" />
+        <div class="skills__container">
+          <SkillCard v-for="skill in backendSkills" :imgName="skill" />
         </div>
       </div>
 
-      <div class="skills">
+      <div class="skills" data-aos="fade-up">
         <h3 class="skills__title">Other</h3>
-        <div class="d-flex justify-center skills__container">
-          <SkillCard v-for="skill in otherSkills" :src="skill" />
+        <div class="skills__container">
+          <SkillCard v-for="skill in otherSkills" :imgName="skill" />
         </div>
       </div>
     </article>
@@ -62,8 +62,9 @@ const otherSkills = ['GIT', 'GITHUB', 'GITLAB', 'FIGMA', 'AWS']
     &__container
       display: grid
       grid-template-columns: repeat(6, 1fr)
+      justify-content: center
+      align-content: center
       gap: 20px
-      // display: grid
   .first
     // Use first child
     padding-top: 10.5em

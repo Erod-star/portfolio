@@ -1,21 +1,19 @@
 <script setup lang="ts">
 interface Props {
-  src: string
+  imgName: string
 }
 
 const props = defineProps<Props>()
 
-// background: rgba(255, 255, 255, 0)
-// border-radius: 16px
-// box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
-// backdrop-filter: blur(5px)
-// -webkit-backdrop-filter: blur(5px)
-// border: 1px solid rgba(255, 255, 255, 0.3)
+const getImageUrl = () => {
+  const path = new URL(`../../public/images/${props.imgName}`, import.meta.url)
+  return path.href
+}
 </script>
 
 <template>
   <div class="skill-card">
-    {{ props.src }}
+    <img :src="getImageUrl()" :alt="props.imgName" />
   </div>
 </template>
 
@@ -31,19 +29,18 @@ const props = defineProps<Props>()
   align-items: center
   aspect-ratio: 1/1
   transition: 400ms
-  width: 150px
-  height: 150px
   &:hover
-    color: $white
-    background: $black-600
+    transform: scale(1.1, 1.1)
+  img
+    width:  100px
+    height: 100px
 </style>
 
 <style lang="sass" scoped>
 @import '../assets/sass/style.sass'
 #app-dark
   .skill-card
-    background-color: $black-600
-    &:hover
-      color: $black-600
-      background: $white
+    background-color: $black-100
+    box-shadow: rgba(255, 255, 255, .10) 4px 4px 15px
+    // box-shadow: rgba(255, 206, 71, .15) 4px 4px 15px
 </style>

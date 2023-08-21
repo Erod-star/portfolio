@@ -55,22 +55,36 @@ $white: #ffff
 $main-background: #F8F7FD
 $section-background: #E8E8E8
 
+
+
+
 // TODO: Create a file for darkmode config
 // ? Darkmode
 $dark: #211F27
 $transition-dark-mode: background .5s ease, color .5s ease-in, border-color .5s
 
 #app-dark
-    background: $dark
+    background: $black-400
     color: white
     transition: $transition-dark-mode
+    header
+        background: $black-400 !important
+        color: white
+        a
+            color: white
     .section-title
         // text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary
-        text-shadow: 1px 1px 2px $black, 0 0 10px $primary, 0 0 10px $primary
-        color: $black
+        text-shadow: 1px 1px 2px $black, 0 0 10px rgba(255, 206, 71, .35), 0 0 10px rgba(255, 206, 71, .15)
+        color: $gray
+
+
 
 // TODO: Create a file for Custom classes config
 // ? Custom classes
+h2
+    font-size: 5.5rem
+    font-family: 'Staatliches'
+    font-weight: 100
 .section
     display: grid
     grid-template-columns: repeat(12, 1fr)
@@ -90,3 +104,6 @@ $transition-dark-mode: background .5s ease, color .5s ease-in, border-color .5s
     position: absolute
     top: -0.3em
     width: 100%
+.first
+    // Use first child
+    padding-top: 10.5em

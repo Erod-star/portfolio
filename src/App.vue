@@ -1,13 +1,17 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
 import { RouterView } from 'vue-router'
+import AOS from 'aos'
 
 import usePortfolio from './composables/usePortfolio'
 import { Footer, Navbar } from '@/components'
 
 const { setAppConf, isDarkMode } = usePortfolio()
 
-onMounted(() => setAppConf())
+onMounted(() => {
+  AOS.init({ duration: 1000, once: false })
+  setAppConf()
+})
 </script>
 
 <template>
