@@ -37,6 +37,17 @@ $black-100: #383838
 $black-400: #141212
 $black-600: #131313
 
+$gray-50: #F7F7F7
+$gray-100: #EDECF0
+$gray-200: #DBD9E0
+$gray-300: #CAC7D1
+// $gray-400: #B8B4C1
+$gray-450: #A6A1B2
+$gray-500: #A6A1B2
+$gray-600: #85818E
+$gray-700: #64616B
+$gray-800: #424047
+
 $gray: #9a9a9a
 $gray-400: #757575
 
@@ -53,14 +64,29 @@ $transition-dark-mode: background .5s ease, color .5s ease-in, border-color .5s
     background: $dark
     color: white
     transition: $transition-dark-mode
+    .section-title
+        // text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary
+        text-shadow: 1px 1px 2px $black, 0 0 10px $primary, 0 0 10px $primary
+        color: $black
 
 // TODO: Create a file for Custom classes config
 // ? Custom classes
+.section
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    article
+        grid-column: 3/11
+        position: relative
 .section-title
     font-family: 'Staatliches'
-    font-weight: 300
+    // text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary
+    color: $gray-100
+    text-shadow: 1px 1px 2px $gray-100, 0 0 10px $primary, 0 0 10px $primary
+    opacity: 0.8
+    color: $white
+    font-weight: 100
     font-size: 17.5rem
-    background: red
     text-align: center
     position: absolute
+    top: -0.3em
     width: 100%

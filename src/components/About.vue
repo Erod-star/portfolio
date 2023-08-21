@@ -4,7 +4,7 @@ const downloadCv = () => console.log('Downloading')
 
 <template>
   <section id="about-section" class="pa-5">
-    <h2>About me</h2>
+    <h2 class="section-title">About me</h2>
 
     <span>Fullstack web developer</span>
 
@@ -49,4 +49,5 @@ const downloadCv = () => console.log('Downloading')
   backdrop-filter: blur(5px)
   -webkit-backdrop-filter: blur(5px)
   border: 1px solid rgba(255, 255, 255, 0.3)
+  position: relative
 </style>
