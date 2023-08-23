@@ -1,19 +1,17 @@
 <script setup lang="ts">
+import usePortfolio from '@/composables/usePortfolio'
+
 interface Props {
   imgName: string
 }
 
 const props = defineProps<Props>()
-
-const getImageUrl = () => {
-  const path = new URL(`../../public/images/${props.imgName}`, import.meta.url)
-  return path.href
-}
+const { getImageUrl } = usePortfolio()
 </script>
 
 <template>
   <div class="skill-card">
-    <img :src="getImageUrl()" :alt="props.imgName" />
+    <img :src="getImageUrl(props.imgName)" :alt="props.imgName" />
   </div>
 </template>
 

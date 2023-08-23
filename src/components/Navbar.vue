@@ -12,7 +12,7 @@ const { changeDarkMode } = usePortfolio()
       <a href="#about"><v-btn>About</v-btn></a>
       <a href="#experience"><v-btn>Experience</v-btn></a>
       <a href="#stack"><v-btn>Stack</v-btn></a>
-      <a href="https://www.google.com.mx/?hl=es"><v-btn>Contact</v-btn></a>
+      <a href="#contact"><v-btn>Contact</v-btn></a>
       <v-btn @click="changeDarkMode">Dark</v-btn>
     </template>
   </v-app-bar>

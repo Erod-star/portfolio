@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { HomeBackdrop, About, LaboralExperience, Stack } from '@/components'
+import { HomeBackdrop, About, Experience, Stack } from '@/components'
 </script>
 
 <template>
@@ -7,8 +7,8 @@ import { HomeBackdrop, About, LaboralExperience, Stack } from '@/components'
     <HomeBackdrop />
     <div class="mx-10">
       <About />
-      <LaboralExperience class="mt-10" />
-      <Stack class="mt-10" />
+      <Experience class="mt-10" />
+      <Stack class="mt-10 mb-10" />
     </div>
   </main>
 </template>

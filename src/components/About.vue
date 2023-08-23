@@ -2,10 +2,21 @@
 import usePortfolio from '../composables/usePortfolio'
 
 const { isDarkMode } = usePortfolio()
-const downloadCv = () => console.log('Downloading')
+const downloadCv = () => {
+  fetch('Resume - Edson Rodriguez.pdf').then((response) => {
+    response.blob().then((blob) => {
+      const fileURL = window.URL.createObjectURL(blob)
+      let alink = document.createElement('a')
+      alink.href = fileURL
+      alink.download = 'Resume - Edson Rodriguez.pdf'
+      alink.click()
+    })
+  })
+}
 </script>
 
 <template>
+  <!-- TODO: Add and fix section class -->
   <section id="about" class="pa-5">
     <article class="about-container">
       <div class="about-container__dev d-flex justify-center align-center" data-aos="fade-right">
@@ -22,16 +33,18 @@ const downloadCv = () => console.log('Downloading')
       <div class="about-container__description" data-aos="fade-left">
         <h2>About me 👨‍💻</h2>
 
-        <span>Fullstack web developer</span>
+        <span class="mb-3">Fullstack web developer</span>
 
         <p>
-          Hi! My name is Edson Arturo Rodríguez Govea, I am a Software front-end developer who loves
-          to learn something new and create simple and complex web pages for process and/or problem
-          improvement
+          Hi! My name is Edson Arturo Rodríguez Govea and I am a Full Stack Developer with a passion
+          for building beautiful and user-friendly websites. I have a strong understanding of both
+          front-end and back-end development, and I am excited to put my skills to use in a
+          professional setting. I am a quick learner and a team player, and I am really confident
+          that I can be a valuable asset to any web development team.
         </p>
 
-        <div class="d-flex">
-          <div class="about-list">
+        <div class="about-container__description__lists mt-5">
+          <div class="about-list mt-3">
             <h4>Aptitudes</h4>
             <ul>
               <li>Intermediate level developer</li>
@@ -42,27 +55,43 @@ const downloadCv = () => console.log('Downloading')
             </ul>
           </div>
 
-          <div class="about-list">
+          <div class="about-list mt-3">
             <h4>Interests</h4>
             <ul>
               <li>Web development</li>
-              <li>Mobile development</li>
-              <li>Single Page Application</li>
+              <li>Single Page Applications</li>
               <li>Work with the best practices</li>
+              <li>Videogames</li>
             </ul>
           </div>
         </div>
 
-        <v-btn @click="downloadCv"> Download CV </v-btn>
+        <div class="d-flex justify-end mt-8 mb-5">
+          <v-btn variant="outlined" rounded="lg" @click="downloadCv">Resume</v-btn>
+        </div>
       </div>
     </article>
   </section>
 </template>
 
 <style lang="sass" scoped>
+@import '../assets/sass/style.sass'
 #about
   height: 100vh
   position: relative
+  h2
+    -moz-background-clip: text
+    -webkit-background-clip: text
+    background-clip: text
+    background-color: #ccc
+    color: rgba(0,0,0,0)
+    margin: 0 auto
+    text-shadow: 1px 1px 7.5px rgba(255,255,255,.9)
+    text-transform: uppercase
+    top: -0.3em
+    width: 100%
+  h4
+    font-size: 1.5rem
   .about-container
     margin-top: 65px
     padding: 0.5em 6.5em
@@ -79,6 +108,19 @@ const downloadCv = () => console.log('Downloading')
       border-radius: 16px
       border: 1px solid rgba(255, 255, 255, 0.3)
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
-      padding: 0.5em 0em 0.5em 4em
+      padding: 0.5em 4em 0.5em 4em
       margin-left: 2em
+      span
+        color: $black-100
+        font-weight: bold
+        font-size: $f-lg
+      &__lists
+        display: grid
+        padding: 0em 3em
+        grid-template-columns: repeat(2, 1fr)
+        .about-list
+          h4
+            color: $secondary
+            text-align: left
+            width: 100%
 </style>

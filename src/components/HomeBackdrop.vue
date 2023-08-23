@@ -4,23 +4,23 @@
   <div class="home-backdrop d-flex flex-column justify-center align-center">
     <div class="home-backdrop__text d-flex flex-column justify-center align-center">
       <span>Hello,</span>
-      <h1>I'm Edson Rodríguez</h1>
+      <h1 data-aos="zoom-in" data-aos-duration="2000">I'm Edson Rodríguez</h1>
       <p>I am a Software Engineer</p>
     </div>
 
     <div class="home-backdrop__media mt-8 d-flex">
-      <a href="https://www.instagram.com/edson_gov" target="_blank"
-        ><img src="../assets/images/instagram.svg" alt="vue logo"
-      /></a>
-      <a href="https://www.linkedin.com/in/edson-r-govea" target="_blank"
-        ><img src="../assets/images/linkedin.svg" alt="vue logo"
-      /></a>
-      <a href="https://github.com/Erod-star" target="_blank"
-        ><img src="../assets/images/github.svg" alt="vue logo"
-      /></a>
-      <a href="mailto:erodstardev@gmail.com" target="_blank"
-        ><img src="../assets/images/gmail.svg" alt="vue logo"
-      /></a>
+      <a href="https://www.instagram.com/edson_gov" target="_blank">
+        <img src="../assets/images/instagram.svg" alt="vue logo" />
+      </a>
+      <a href="https://www.linkedin.com/in/edson-r-govea" target="_blank">
+        <img src="../assets/images/linkedin.svg" alt="vue logo" />
+      </a>
+      <a href="https://github.com/Erod-star" target="_blank">
+        <img src="../assets/images/github.svg" alt="vue logo" />
+      </a>
+      <a href="mailto:erodstardev@gmail.com" target="_blank">
+        <img src="../assets/images/gmail.svg" alt="vue logo" />
+      </a>
     </div>
   </div>
 </template>
@@ -69,4 +69,15 @@
     transform: translateY(0)
   50%
     transform: translateY(-15px)
+</style>
+
+<style lang="sass" scoped>
+@import '../assets/sass/style.sass'
+#app-dark
+  .home-backdrop
+    &__text
+      h1
+        color: $primary
+      span, p
+        color: $white
 </style>

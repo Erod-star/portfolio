@@ -5,6 +5,11 @@ const usePortfolio = () => {
   const store = usePortfolioStore()
   const { isDarkMode, appConf } = storeToRefs(store)
 
+  const getImageUrl = (imgName: string) => {
+    const path = new URL(`../../public/images/${imgName}`, import.meta.url)
+    return path.href
+  }
+
   return {
     // ? Properties
     appConf,
@@ -12,7 +17,8 @@ const usePortfolio = () => {
     // ? Getters
     // ? Methods
     changeDarkMode: store.changeDarkMode,
-    setAppConf: store.setAppConf
+    setAppConf: store.setAppConf,
+    getImageUrl
   }
 }
 

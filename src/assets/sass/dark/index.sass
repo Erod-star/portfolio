@@ -1,4 +1,16 @@
-$dark: #211F27
+@import "../colors"
 
 #app-dark
-    background: $dark !important
+    background: $dark-background
+    color: white
+    transition: $transition-dark-mode
+    header
+        background: $black-400 !important
+        color: white
+        a
+            color: white
+    .section-title
+        // text-shadow: -1px 0 $primary, 0 1px $primary, 1px 0 $primary, 0 -1px $primary
+        text-shadow: 1px 1px 7.5px rgba(19, 15, 7, 0.8)
+        color: $primary
+        background-color: $dark-background

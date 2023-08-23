@@ -22,11 +22,11 @@ onMounted(() => {
       <RouterView />
     </div>
 
-    <Footer />
+    <Footer class="mt-10" />
   </v-app>
 </template>
 
-<style lang="sass" scoped>
+<style lang="sass">
 @import './assets/sass/style.sass'
 #app
   transition: $transition-dark-mode
