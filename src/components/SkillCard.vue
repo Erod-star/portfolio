@@ -30,8 +30,8 @@ const { getImageUrl } = usePortfolio()
   &:hover
     transform: scale(1.1, 1.1)
   img
-    width:  100px
-    height: 100px
+    width:  65%
+    height: 65%
 </style>
 
 <style lang="sass" scoped>

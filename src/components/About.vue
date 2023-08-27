@@ -2,17 +2,6 @@
 import usePortfolio from '../composables/usePortfolio'
 
 const { isDarkMode } = usePortfolio()
-const downloadCv = () => {
-  fetch('Resume - Edson Rodriguez.pdf').then((response) => {
-    response.blob().then((blob) => {
-      const fileURL = window.URL.createObjectURL(blob)
-      let alink = document.createElement('a')
-      alink.href = fileURL
-      alink.download = 'Resume - Edson Rodriguez.pdf'
-      alink.click()
-    })
-  })
-}
 </script>
 
 <template>
@@ -33,17 +22,18 @@ const downloadCv = () => {
       <div class="about-container__description" data-aos="fade-left">
         <h2>About me 👨‍💻</h2>
 
-        <span class="mb-3">Fullstack web developer</span>
+        <!-- <span class="mb-3">Fullstack web developer</span> -->
 
         <p>
-          Hi! My name is Edson Arturo Rodríguez Govea and I am a Full Stack Developer with a passion
-          for building beautiful and user-friendly websites. I have a strong understanding of both
-          front-end and back-end development, and I am excited to put my skills to use in a
-          professional setting. I am a quick learner and a team player, and I am really confident
-          that I can be a valuable asset to any web development team.
+          Hi! My name is Edson Arturo Rodríguez Govea and I am a
+          <strong>Full Stack Developer</strong> with a passion for building beautiful and
+          user-friendly websites. I have a strong understanding of both front-end and back-end
+          development, and I am excited to put my skills to use in a professional setting. I am a
+          quick learner and a team player, and I am really confident that I can be a valuable asset
+          to any web development team.
         </p>
 
-        <div class="about-container__description__lists mt-5">
+        <div class="about-container__description__lists mt-4">
           <div class="about-list mt-3">
             <h4>Aptitudes</h4>
             <ul>
@@ -64,10 +54,6 @@ const downloadCv = () => {
               <li>Videogames</li>
             </ul>
           </div>
-        </div>
-
-        <div class="d-flex justify-end mt-8 mb-5">
-          <v-btn variant="outlined" rounded="lg" @click="downloadCv">Resume</v-btn>
         </div>
       </div>
     </article>
@@ -97,6 +83,7 @@ const downloadCv = () => {
     padding: 0.5em 6.5em
     display: grid
     grid-template-columns: 300px 1fr
+    // height: 100%
     &__dev
       img
         width: 300px
@@ -108,7 +95,7 @@ const downloadCv = () => {
       border-radius: 16px
       border: 1px solid rgba(255, 255, 255, 0.3)
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
-      padding: 0.5em 4em 0.5em 4em
+      padding: 0.5rem 4rem 1.5rem 4rem
       margin-left: 2em
       span
         color: $black-100
@@ -118,9 +105,41 @@ const downloadCv = () => {
         display: grid
         padding: 0em 3em
         grid-template-columns: repeat(2, 1fr)
+        justify-items: center
+        gap: 20px
+        padding: 0em 3em
         .about-list
           h4
             color: $secondary
             text-align: left
             width: 100%
+
+@media screen and (max-width: $bp-xl)
+  #about
+    .about-container
+      grid-template-columns: 0px 1fr
+      &__dev
+        visibility: hidden
+      &__description
+        &__lists
+          padding: 0em 3.5em
+
+@media screen and (max-width: $bp-xl)
+  #about
+    .about-container
+      padding: 0.5rem 2.5rem
+      &__description
+        &__lists
+          padding: 0rem 1rem
+
+@media screen and (max-width: $bp-md)
+  #about
+    h2
+      font-size: 3.5rem
+      margin-bottom: .5rem
+    .about-container
+      &__description
+        &__lists
+          grid-template-columns: repeat(1, 1fr)
+          justify-items: left
 </style>

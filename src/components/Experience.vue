@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { Job } from '../interfaces'
-import ExperienceCard from './ExperienceCard.vue'
+import ExperienceCard from './JobsTimeline.vue'
 
 const jobs = <Job[]>[
   {
@@ -77,11 +77,14 @@ const jobs = <Job[]>[
 </template>
 
 <style lang="sass" scoped>
+@import '../assets/sass/style.sass'
 #experience
   position: relative
-  .section-title
-    // width: 80% !important
   article
     grid-column: 3/11
-    .experience-container
+
+@media screen and (max-width: $bp-xl)
+  #experience
+    article
+      grid-column: 2/12
 </style>

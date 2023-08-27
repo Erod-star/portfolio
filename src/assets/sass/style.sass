@@ -17,7 +17,7 @@ h2
     font-family: 'Staatliches'
     font-weight: 100
 
-// ? Custom classes
+// ? Global classes
 .section
     display: grid
     grid-template-columns: repeat(12, 1fr)
@@ -50,13 +50,24 @@ h2
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
     padding: 0.5em 4em 0.5em 4em
 
+// ? Global media queries
+@media screen and (max-width: $bp-lg)
+  .section-title
+    font-size: 11.5rem
+
+@media screen and (max-width: $bp-md)
+    #app, #app-dark
+        font-size: $f-sm
+        .section-title
+            font-size: 8rem
+
 
 // TODOS:
-// - Anadir iconos correctos
 // - Agregar modo responsive
+
+// - Anadir estilos para el dark mode
+// - Anadir iconos correctos
 // - Anadir animacion para links
 // - Agregar imagenes para el dev en about
-// - Anadir estilos para el dark mode
 // - Agregar traducciones
-// - Agregar funcionalidad para agendar meetings
 // - Agregar funcionalidad para agendar meetings

@@ -63,4 +63,10 @@ const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
       justify-content: center
       align-content: center
       gap: 20px
+
+@media screen and (max-width: $bp-md)
+  #stack
+    .skills
+      &__container
+        grid-template-columns: repeat(4, 1fr)
 </style>

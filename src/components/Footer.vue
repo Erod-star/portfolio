@@ -4,12 +4,7 @@ import { Contact } from '@/components'
 
 <template>
   <v-footer id="footer" class="text-center d-flex flex-column">
-    <!-- <Contact id="contact" />
-    <div class="pt-0">Created by Erodstar with a lot of 💛</div> -->
-    <div id="contact">
-      <p>Created by Erodstar with a lot of 💛</p>
-      <p>All Rights Reserved © 2023</p>
-    </div>
+    <Contact />
 
     <v-divider />
 

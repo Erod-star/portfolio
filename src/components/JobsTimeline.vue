@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import type { Job } from '@/interfaces'
+import { onMounted, ref, watch, nextTick, onBeforeUnmount } from 'vue'
+
 import usePortfolio from '@/composables/usePortfolio'
+import type { Job } from '@/interfaces'
 
 interface Props {
   jobs: Job[]
@@ -8,11 +10,26 @@ interface Props {
 
 const props = defineProps<Props>()
 const { getImageUrl } = usePortfolio()
+const windowWidth = ref<number>(window.innerWidth)
+
+const handleResizeWindow = () => {
+  windowWidth.value = window.innerWidth
+}
+
+onMounted(() => {
+  nextTick(() => {
+    window.addEventListener('resize', handleResizeWindow)
+  })
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('resize', handleResizeWindow)
+})
 </script>
 
 <template>
   <div>
-    <v-timeline align="start">
+    <v-timeline align="start" :side="windowWidth < 993 ? 'end' : undefined">
       <v-timeline-item v-for="(job, i) in props.jobs" :key="i" :dot-color="job.color" size="small">
         <div
           class="timeline-item card-container"
@@ -28,7 +45,7 @@ const { getImageUrl } = usePortfolio()
             <img v-if="job.img" :src="getImageUrl(job.img)" :alt="job.img" />
           </div>
           <div class="mt-3">{{ job.description }}</div>
-          <ul class="timeline-item__highlights">
+          <ul v-if="job.highlights" class="timeline-item__highlights">
             <li v-for="highlight in job.highlights">{{ highlight }}</li>
           </ul>
           <div v-if="job.technologies" class="timeline-item__chips">
@@ -43,8 +60,8 @@ const { getImageUrl } = usePortfolio()
               {{ technology }}
             </v-chip>
           </div>
-          <div class="d-flex justify-end w-100 mt-8">
-            <a v-if="job.href" :href="job.href" target="_blank">
+          <div v-if="job.href" class="d-flex justify-end w-100 mt-8">
+            <a :href="job.href" target="_blank">
               <v-btn variant="outlined" rounded="lg" :color="job.color">Visit webpage</v-btn>
             </a>
           </div>
