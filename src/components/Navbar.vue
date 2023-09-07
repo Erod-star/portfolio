@@ -46,7 +46,7 @@ onBeforeUnmount(() => {
   </v-app-bar>
 
   <!-- Drawer -->
-  <v-navigation-drawer v-model="isDrawerActive" location="right" temporary>
+  <v-navigation-drawer v-model="isDrawerActive" location="right" temporary hide-overlay>
     <v-list density="compact" nav>
       <a href="#">
         <v-list-item value="erodstar"> <i class="material-icons"> home </i> Erodstar </v-list-item>
@@ -80,7 +80,7 @@ onBeforeUnmount(() => {
 @import '../assets/sass/style.sass'
 header
   // background: $main-background !important
-  padding: .5em 4em !important
+  padding: .5em .5em .5em 1.4em !important
   margin: 0px auto
   .erodstar
     font-family: 'Staatliches'
@@ -103,6 +103,10 @@ header
       align-items: center
       i
         margin-right: 1rem
+
+// @media screen and (max-width: $bp-sm)
+//   header
+//     padding: 0rem !important
 </style>
 
 <style lang="sass" scoped>

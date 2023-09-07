@@ -75,4 +75,10 @@ const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
     .skills
       &__container
         grid-template-columns: repeat(3, 1fr)
+
+  @media screen and (max-width: $bp-sm)
+  #stack
+    .skills
+      &__title
+        font-size: 2rem
 </style>

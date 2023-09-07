@@ -47,6 +47,12 @@ const downloadCv = () => {
       color: gray
       font-size: 20px
       font-weight: normal
+
+@media screen and (max-width: $bp-sm)
+  .home-backdrop
+    &__text
+      p
+        font-size: $f-sm
 </style>
 
 <style lang="sass" scoped>

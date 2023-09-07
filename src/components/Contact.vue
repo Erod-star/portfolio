@@ -170,6 +170,14 @@
     &__media
       margin: 0rem 2.5rem
       margin-top: .8rem
+
+@media screen and (max-width: $bp-sm)
+  .contact
+    &__media
+      margin-top: 1.2rem
+      svg
+        height: 85%
+        width:  85%
 </style>
 
 <style lang="sass" scoped>

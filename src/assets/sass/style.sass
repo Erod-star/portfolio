@@ -6,6 +6,8 @@
 // ? Global styling
 html
     scroll-behavior: smooth
+    body
+        overflow-x: hidden
 a
     &:visited
         color: $dark
@@ -63,8 +65,9 @@ h2
 
 @media screen and (max-width: $bp-sm)
     #app, #app-dark
+        font-size: $f-xs
         .section-title
-            font-size: 5.5rem
+            font-size: 4.5rem
 
 
 // TODOS:

@@ -110,6 +110,15 @@ onBeforeUnmount(() => {
       img
         height: 3.7rem
         width:  3.7rem
+
+@media screen and (max-width: $bp-sm)
+  .v-timeline
+    :deep(.v-timeline-item)
+      .v-timeline-item__body
+        padding: 0 !important
+      .v-timeline-divider
+        &__after, &__before, .v-timeline-divider__dot
+          display: none
 </style>
 
 <style lang="sass" scoped>

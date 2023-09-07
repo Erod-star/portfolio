@@ -87,4 +87,11 @@ const jobs = <Job[]>[
   #experience
     article
       grid-column: 2/12
+
+@media screen and (max-width: $bp-sm)
+  #experience
+    article
+      grid-column: 1/12
+      .section-title
+        font-size: 4.4rem
 </style>

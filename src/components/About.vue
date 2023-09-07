@@ -20,7 +20,7 @@ const { isDarkMode } = usePortfolio()
       </div>
 
       <div class="about-container__description" data-aos="fade-left">
-        <h2>About me 👨‍💻</h2>
+        <h2>About me</h2>
 
         <!-- <span class="mb-3">Fullstack web developer</span> -->
 
@@ -148,4 +148,13 @@ const { isDarkMode } = usePortfolio()
     height: 100%
     h2
       font-size: 2.8rem
+    .about-container
+      padding: 0rem
+      &__description
+        margin-left: 0rem
+
+@media screen and (max-width: $bp-sm)
+  #about
+    h2
+      font-size: 3rem
 </style>
