@@ -22,3 +22,13 @@ import { Contact } from '@/components'
   // height: calc(100vh - 65px) !important
   padding: 2rem 1rem 1rem 1rem
 </style>
+
+<style lang="sass" scoped>
+@import '../assets/sass/style.sass'
+#app-dark
+  #footer
+    background: $black-800
+    transition: $transition-dark-mode
+    color: $white
+    padding: 2rem 1rem 1rem 1rem
+</style>

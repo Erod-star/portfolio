@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref, watch, nextTick, onBeforeUnmount } from 'vue'
+import { onMounted, ref, nextTick, onBeforeUnmount } from 'vue'
 
 import usePortfolio from '@/composables/usePortfolio'
 import type { Job } from '@/interfaces'
@@ -74,14 +74,12 @@ onBeforeUnmount(() => {
 <style lang="sass" scoped>
 @import '../assets/sass/style.sass'
 .timeline-item
-  padding: 2.5rem
+  padding: 2.5rem 2rem !important
   &__header
     a
       text-decoration: none
     h2
       font-size: 2.8rem
-      // height: 4rem
-      // line-height: 4rem
     span
       font-family: 'Staatliches'
       font-size: 1.4rem
@@ -101,5 +99,25 @@ onBeforeUnmount(() => {
       margin-right: .5rem
       margin-top: 0.5rem
 
-      //  display:inline; margin: 2px; height: 45px;
+@media screen and (max-width: $bp-sm)
+  .timeline-item
+    &__header
+      h2
+        font-size: 2rem
+      span
+        font-family: 'Staatliches'
+        font-size: 1.2rem
+      img
+        height: 3.7rem
+        width:  3.7rem
+</style>
+
+<style lang="sass" scoped>
+@import '../assets/sass/style.sass'
+#app-dark
+  .v-timeline
+    :deep(.v-timeline-item)
+      .v-timeline-divider
+        &__after, &__before
+          background-color: $white
 </style>

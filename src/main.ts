@@ -1,5 +1,5 @@
 import './assets/sass/style.sass'
-// import 'material-design-icons-iconfont/dist/material-design-icons.css'
+import 'material-design-icons-iconfont/dist/material-design-icons.css'
 
 import 'aos/dist/aos.css'
 

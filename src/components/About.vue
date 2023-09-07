@@ -142,4 +142,10 @@ const { isDarkMode } = usePortfolio()
         &__lists
           grid-template-columns: repeat(1, 1fr)
           justify-items: left
+
+@media screen and (max-width: $bp-sm)
+  #about
+    height: 100%
+    h2
+      font-size: 2.8rem
 </style>

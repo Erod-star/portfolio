@@ -30,15 +30,15 @@ const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
 
       <div class="skills">
         <h3 class="skills__title" data-aos="fade-up">Backend</h3>
-        <div class="skills__container" data-aos="fade-up">
-          <SkillCard v-for="skill in backendSkills" :imgName="skill" />
+        <div class="skills__container">
+          <SkillCard v-for="skill in backendSkills" data-aos="fade-up" :imgName="skill" />
         </div>
       </div>
 
       <div class="skills">
         <h3 class="skills__title" data-aos="fade-up">Other</h3>
-        <div class="skills__container" data-aos="fade-up">
-          <SkillCard v-for="skill in otherSkills" :imgName="skill" />
+        <div class="skills__container">
+          <SkillCard v-for="skill in otherSkills" data-aos="fade-up" :imgName="skill" />
         </div>
       </div>
     </article>
@@ -64,9 +64,15 @@ const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
       align-content: center
       gap: 20px
 
-@media screen and (max-width: $bp-md)
+@media screen and (max-width: $bp-lg)
   #stack
     .skills
       &__container
         grid-template-columns: repeat(4, 1fr)
+
+@media screen and (max-width: $bp-md)
+  #stack
+    .skills
+      &__container
+        grid-template-columns: repeat(3, 1fr)
 </style>
