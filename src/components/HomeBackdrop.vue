@@ -31,7 +31,7 @@ const downloadCv = () => {
 <style lang="sass" scoped>
 @import '../assets/sass/style.sass'
 .home-backdrop
-  height: calc(100vh - 65px)
+  height: calc(100vh - 75px)
   &__text
     font-weight: 100
     letter-spacing: 2px

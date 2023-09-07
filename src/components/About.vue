@@ -65,6 +65,9 @@ const { isDarkMode } = usePortfolio()
 #about
   height: 100vh
   position: relative
+  display: flex
+  justify-content: center
+  align-items: center
   h2
     -moz-background-clip: text
     -webkit-background-clip: text

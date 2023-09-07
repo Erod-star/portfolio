@@ -87,6 +87,7 @@ header
     font-size: 2em
     text-decoration: none
     transition: all ease 200ms
+    color: #000
     &:hover
       transform: scale(1.2, 1.2)
   .navbar-link
@@ -103,15 +104,15 @@ header
       align-items: center
       i
         margin-right: 1rem
-
-// @media screen and (max-width: $bp-sm)
-//   header
-//     padding: 0rem !important
 </style>
 
 <style lang="sass" scoped>
 @import '../assets/sass/style.sass'
 #app-dark
+  header
+    background: $black-800 !important
+  .erodstar
+    color: #FFF
   .v-navigation-drawer
     background: $black-400 !important
     color: $white

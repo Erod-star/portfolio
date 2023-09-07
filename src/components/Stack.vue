@@ -21,24 +21,24 @@ const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
   <section id="stack" class="section">
     <article>
       <h2 class="section-title">Stack</h2>
-      <div class="skills">
-        <h3 class="skills__title" data-aos="fade-up">Frontend</h3>
+      <div class="skills" data-aos="fade-up">
+        <h3 class="skills__title">Frontend</h3>
         <div class="skills__container">
-          <SkillCard v-for="skill in frontendSkills" data-aos="fade-up" :imgName="skill" />
+          <SkillCard v-for="skill in frontendSkills" :imgName="skill" />
         </div>
       </div>
 
-      <div class="skills">
-        <h3 class="skills__title" data-aos="fade-up">Backend</h3>
+      <div class="skills" data-aos="fade-up">
+        <h3 class="skills__title">Backend</h3>
         <div class="skills__container">
-          <SkillCard v-for="skill in backendSkills" data-aos="fade-up" :imgName="skill" />
+          <SkillCard v-for="skill in backendSkills" :imgName="skill" />
         </div>
       </div>
 
-      <div class="skills">
-        <h3 class="skills__title" data-aos="fade-up">Other</h3>
+      <div class="skills" data-aos="fade-up">
+        <h3 class="skills__title">Other</h3>
         <div class="skills__container">
-          <SkillCard v-for="skill in otherSkills" data-aos="fade-up" :imgName="skill" />
+          <SkillCard v-for="skill in otherSkills" :imgName="skill" />
         </div>
       </div>
     </article>
