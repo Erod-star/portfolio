@@ -1,19 +1,21 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import type { Job } from '../interfaces'
 import ExperienceCard from './JobsTimeline.vue'
+
+const { t } = useI18n()
 
 const jobs = <Job[]>[
   {
     color: 'blue',
     company: 'Sonatafy',
-    description:
-      'Management and update of the customer administrative tools, based on automated tests and agile communications between systems.',
+    description: t('experience.sonatafy.description'),
     highlights: [
-      'Development of a custom component library from scratch for the client using Vue2 (Options API), taking as reference the most popular ones on the market such as Buefy or Vuetify, focusing on the needs and preferences of the client.',
-      'Creation of endpoints through Node.js consuming information from both GraphQ and a MySQL database.'
+      t('experience.sonatafy.highlights.developmentOf'),
+      t('experience.sonatafy.highlights.creationOf')
     ],
     img: 'sonatafy-logo.jpg',
-    date: 'NOV 2022 - CURRENT',
+    date: `NOV 2022 - ${t('global.current')}`,
     href: 'https://sonatafy.com/',
     technologies: [
       'Vue',
@@ -30,11 +32,10 @@ const jobs = <Job[]>[
   {
     color: 'cyan',
     company: 'Freeway',
-    description:
-      'FreeWay is a startup company focused on the development of mobile applications for freight. Here a mobile application was created through the Scrum methodology.',
+    description: t('experience.freeway.description'),
     highlights: [
-      'Development in the Flutter framework, consuming GraphQL queries, where a CRUD was created for the cargo services flow in a freight transport application. In addition to this, by being a team lead, I actively participate in giving feedback to other developers by doing code reviews, pair coding or simply chatting to find the best possible solution.',
-      'I served as team lead of a mobile development team, actively using the Scrum methodology preparing Sprint planning, Sprint retrospectives as well as creating tickets for new features or issues'
+      t('experience.freeway.highlights.developmentOfAMobile'),
+      t('experience.freeway.highlights.iServedAs')
     ],
     img: 'freeway-logo.jpg',
     date: 'NOV 2021 - NOV 2022',
@@ -44,10 +45,10 @@ const jobs = <Job[]>[
   {
     color: 'green',
     company: 'HMH Sistemas',
-    description: 'Software company specialized in web development using React.js and Vue.js',
+    description: t('experience.hmh.description'),
     highlights: [
-      'Participated in the management of a medicine delivery application where I worked with the Google Maps Platform API creating Polylines, user interfaces and real-time tracking of the shipment. This implementing the GMaps API as well as Vue.js and Sass',
-      'Re-make UX-UI in point of sale application, this new experience was developed using Vue.js and SASS using the BEM methodology'
+      t('experience.hmh.highlights.participatedInThe'),
+      t('experience.hmh.highlights.reMake')
     ],
     img: 'hmh-logo.png',
     date: 'MAY 2021 - NOV 2022',
@@ -56,11 +57,10 @@ const jobs = <Job[]>[
   },
   {
     color: 'yellow',
-    company: 'University of Colima',
-    description:
-      'I graduated as a "Software Engineer" after studying for a period of 8 semesters at the faculty of telematics of the University of Colima.',
+    company: t('experience.universityOfColima.universityOfColima'),
+    description: t('experience.universityOfColima.description'),
     img: 'ucol-logo.png',
-    date: 'AUG 2019 - JUL 2023'
+    date: `${t('months.aug')} 2019 - JUL 2023`
   }
 ]
 </script>
@@ -68,7 +68,7 @@ const jobs = <Job[]>[
 <template>
   <section id="experience" class="section">
     <article>
-      <h2 class="section-title">Experience</h2>
+      <h2 class="section-title">{{ $t('experience.experience') }}</h2>
       <div class="experience-container mt-10">
         <ExperienceCard :jobs="jobs" />
       </div>

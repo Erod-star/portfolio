@@ -15,10 +15,12 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@intlify/unplugin-vue-i18n": "^1.2.0",
     "aos": "^2.3.4",
     "material-design-icons-iconfont": "^6.7.0",
     "pinia": "^2.1.4",
     "vue": "^3.3.4",
+    "vue-i18n": "^9.4.0",
     "vue-router": "^4.2.4",
     "vuetify": "^3.3.13"
   },

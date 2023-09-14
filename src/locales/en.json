@@ -1,0 +1,78 @@
+{
+  "about": {
+    "about": "About",
+    "aboutMe": "About me",
+    "aptitudes": {
+      "aptitudes": "Aptitudes",
+      "fifth": "English level B2",
+      "first": "Intermediate level developer",
+      "fourth": "Team player",
+      "second": "Front-end frameworks managment",
+      "third": "Willingness to learn"
+    },
+    "description": "Hi! My name is Edson Arturo Rodríguez Govea and I am a Full Stack Developer with a passion for building beautiful and user-friendly websites. I have a strong understanding of both front-end and back-end development, and I am excited to put my skills to use in a professional setting. I am a quick learner and a team player, and I am really confident that I can be a valuable asset to any web development team!",
+    "interests": {
+      "interests": "Interests",
+      "singlePageApplications": "Single Page Applications",
+      "videogames": "Videogames",
+      "webDevelopment": "Web development",
+      "workWithTheBestPractices": "Work with the best practices"
+    }
+  },
+  "experience": {
+    "experience": "Experience",
+    "freeway": {
+      "description": "FreeWay is a startup company focused on the development of mobile applications for freight using the software development methodology Scrum",
+      "highlights": {
+        "developmentOfAMobile": "Develompent of a mobile application using the Flutter framework and consuming information through GraphQL queries, where a CRUD was created for the cargo services flow in a freight transport application. In addition to this, by being a team lead, I actively participate in giving feedback to other developers by doing code reviews, pair coding or simply chatting to find the best possible solution.",
+        "iServedAs": "I served as team lead of a mobile development team, actively using the Scrum methodology preparing Sprint planning, Sprint retrospectives as well as creating tickets for new features or issues."
+      }
+    },
+    "hmh": {
+      "description": "Software company specialized in web development using React.js and Vue.js",
+      "highlights": {
+        "participatedInThe": "Participated in the management of a medicine delivery application where I worked with the Google Maps Platform API creating Polylines, user interfaces and real-time tracking of the shipment. This implementing the GMaps API as well as Vue.js and Sass",
+        "reMake": "Re-make UX-UI in point of sale application, this new experience was developed using Vue.js and SASS using the BEM methodology"
+      }
+    },
+    "sonatafy": {
+      "description": "Management and update of the customer administrative tools, based on automated tests and agile communications between systems.",
+      "highlights": {
+        "creationOf": "Creation of endpoints through Node.js consuming information from a PostgreSQL database.",
+        "developmentOf": "Development of a custom component library from scratch for the client using Vue2 (Options API), taking as reference the most popular ones on the market such as Buefy or Vuetify, focusing on the needs and preferences of the client."
+      }
+    },
+    "techStach": "Tech stack",
+    "universityOfColima": {
+      "description": "I graduated as a \"Software Engineer\" after studying for a period of 8 semesters at the faculty of telematics of the University of Colima.",
+      "universityOfColima": "University of Colima"
+    }
+  },
+  "footer": {
+    "contact": "Contact",
+    "createdBy": "Created by Erodstar with a lot of",
+    "poweredBy": "Powered by",
+    "rightsReserved": "All Rights Reserved"
+  },
+  "global": {
+    "current": "Current",
+    "idiom": " Language",
+    "language": "Language",
+    "other": "Others",
+    "selectLanguage": "Select a language",
+    "settings": "Settings",
+    "visitWebPage": "Visit webpage"
+  },
+  "languages": {
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "months": {
+    "aug": "AUG"
+  },
+  "salute": {
+    "butMyRealNameIs": "but my real name is",
+    "downloadResume": "Download resume",
+    "hello": "Hello, I'm"
+  }
+}

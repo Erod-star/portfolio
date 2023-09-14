@@ -1,11 +1,11 @@
 export interface AppConfing {
   isDarkMode?: boolean
-  languague?: Lenguages
+  languague?: Languages
 }
 
-export enum Lenguages {
-  ES = 'es',
-  EN = 'en'
+export enum Languages {
+  en = 'en',
+  es = 'es'
 }
 
 export interface Job {

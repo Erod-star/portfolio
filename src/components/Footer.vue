@@ -9,7 +9,7 @@ import { Contact } from '@/components'
     <v-divider />
 
     <div class="d-flex justify-end w-100 align-center">
-      <p class="mr-2">Powered by</p>
+      <p class="mr-2">{{ $t('footer.poweredBy') }}</p>
       <img src="../assets/images/vue-logo.svg" alt="vue logo" width="20" height="20" />
     </div>
   </v-footer>

@@ -2,7 +2,7 @@
 
 <template>
   <div id="contact" class="contact">
-    <h4>Contact</h4>
+    <h4>{{ $t('footer.contact') }}</h4>
     <div class="contact__media">
       <a href="https://www.instagram.com/edson_gov" target="_blank">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -122,8 +122,8 @@
       </a>
     </div>
     <div class="contact__erodstar-message">
-      <p>Created by Erodstar with a lot of 💛</p>
-      <p>All Rights Reserved © 2023</p>
+      <p>{{ $t('footer.createdBy') }} 💛</p>
+      <p>{{ $t('footer.rightsReserved') }} © 2023</p>
     </div>
   </div>
 </template>

@@ -15,43 +15,38 @@ const { isDarkMode } = usePortfolio()
               ? `https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9179cbc1-3c77-4646-807c-ff7ba5a3019f/dduh0rf-4fa2175c-490a-4119-88b3-2a56fae732f0.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzkxNzljYmMxLTNjNzctNDY0Ni04MDdjLWZmN2JhNWEzMDE5ZlwvZGR1aDByZi00ZmEyMTc1Yy00OTBhLTQxMTktODhiMy0yYTU2ZmFlNzMyZjAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RKsPiq1AftNwrGQML4Y_j8UYJI6uHhrii6G-UVsOl64`
               : 'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b8d2b12-21e8-4931-8a6d-fb9ecdd60383/dc5rnv9-dd76b0dd-7bf9-4a0c-83bf-19a627056193.png/v1/fill/w_660,h_1210/avengers_infinity_war_star_lord_png_by_metropolis_hero1125_dc5rnv9-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIzMCIsInBhdGgiOiJcL2ZcLzViOGQyYjEyLTIxZTgtNDkzMS04YTZkLWZiOWVjZGQ2MDM4M1wvZGM1cm52OS1kZDc2YjBkZC03YmY5LTRhMGMtODNiZi0xOWE2MjcwNTYxOTMucG5nIiwid2lkdGgiOiI8PTY3MSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CI-eHN00pmxnXYpxEawNCA1XbLY8ikcteJ3DR-got4I'
           "
-          alt="vue logo"
+          alt="Erodstar"
         />
       </div>
 
       <div class="about-container__description" data-aos="fade-left">
-        <h2>About me</h2>
-
-        <!-- <span class="mb-3">Fullstack web developer</span> -->
+        <h2>{{ $t('about.aboutMe') }}</h2>
+        <!-- <h2>{{ $t('about.about') }}</h2> -->
 
         <p>
-          Hi! My name is Edson Arturo Rodríguez Govea and I am a
-          <strong>Full Stack Developer</strong> with a passion for building beautiful and
-          user-friendly websites. I have a strong understanding of both front-end and back-end
-          development, and I am excited to put my skills to use in a professional setting. I am a
-          quick learner and a team player, and I am really confident that I can be a valuable asset
-          to any web development team.
+          <!-- TODO: Add corresponding strongs -->
+          {{ $t('about.description') }}
         </p>
 
         <div class="about-container__description__lists mt-4">
           <div class="about-list mt-3">
-            <h4>Aptitudes</h4>
+            <h4>{{ $t('about.aptitudes.aptitudes') }}</h4>
             <ul>
-              <li>Intermediate level developer</li>
-              <li>Front-end frameworks managment</li>
-              <li>Willingness to learn</li>
-              <li>Commitment to teamwork</li>
-              <li>English B2</li>
+              <li>{{ $t('about.aptitudes.first') }}</li>
+              <li>{{ $t('about.aptitudes.second') }}</li>
+              <li>{{ $t('about.aptitudes.third') }}</li>
+              <li>{{ $t('about.aptitudes.fourth') }}</li>
+              <li>{{ $t('about.aptitudes.fifth') }}</li>
             </ul>
           </div>
 
           <div class="about-list mt-3">
-            <h4>Interests</h4>
+            <h4>{{ $t('about.interests.interests') }}</h4>
             <ul>
-              <li>Web development</li>
-              <li>Single Page Applications</li>
-              <li>Work with the best practices</li>
-              <li>Videogames</li>
+              <li>{{ $t('about.interests.webDevelopment') }}</li>
+              <li>{{ $t('about.interests.singlePageApplications') }}</li>
+              <li>{{ $t('about.interests.workWithTheBestPractices') }}</li>
+              <li>{{ $t('about.interests.videogames') }}</li>
             </ul>
           </div>
         </div>
