@@ -3,17 +3,8 @@ import { watch, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import usePortfolio from '../composables/usePortfolio'
 
-const { t, locale } = useI18n()
+const { locale } = useI18n()
 const { languages, changeLanguage } = usePortfolio()
-
-watch(locale, () => {
-  nextTick(() => {
-    languages.value = [
-      { label: t('languages.english'), value: 'en' },
-      { label: t('languages.spanish'), value: 'es' }
-    ]
-  })
-})
 </script>
 
 <template>
