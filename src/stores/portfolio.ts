@@ -1,9 +1,9 @@
 import { ref, computed } from 'vue'
 import { defineStore } from 'pinia'
 
-import { Lenguages, type AppConfing } from '../interfaces/index'
+import { Languages, type AppConfing } from '../interfaces/index'
 
-const DEFAULT_CONFIG: AppConfing = { isDarkMode: false, languague: Lenguages.ES }
+const DEFAULT_CONFIG: AppConfing = { isDarkMode: false, languague: Languages.es }
 
 export const usePortfolioStore = defineStore('portfolio', () => {
   // ? Properties
@@ -26,6 +26,12 @@ export const usePortfolioStore = defineStore('portfolio', () => {
     changeDarkMode: () => {
       appConf.value.isDarkMode = !appConf.value.isDarkMode
       localStorage.setItem('AppConf', JSON.stringify(appConf.value))
+    },
+    changeLanguage: (lang: Languages) => {
+      if (appConf.value.languague !== lang) {
+        appConf.value.languague = lang
+        localStorage.setItem('AppConf', JSON.stringify(appConf.value))
+      }
     }
   }
 })

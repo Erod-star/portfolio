@@ -55,6 +55,7 @@ const downloadCv = () => {
     &__text
       p
         font-size: $f-sm
+        padding: 0px 1.8rem
 </style>
 
 <style lang="sass" scoped>

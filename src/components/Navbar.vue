@@ -1,11 +1,8 @@
 <script setup lang="ts">
 import { onMounted, ref, nextTick, onBeforeUnmount } from 'vue'
-import usePortfolio from '@/composables/usePortfolio'
-import { Settings } from '@/components'
+import { Settings, LanguageSelector, DarkModeSwitch } from '@/components'
 
-const { changeDarkMode, isDarkMode } = usePortfolio()
-
-const isDrawerActive = ref<boolean>(true)
+const isDrawerActive = ref<boolean>(false)
 
 const windowWidth = ref<number>(window.innerWidth)
 
@@ -43,13 +40,6 @@ onBeforeUnmount(() => {
           <v-btn>{{ $t('footer.contact') }}</v-btn>
         </a>
         <Settings />
-        <!-- <v-btn
-          :color=
-          variant="tonal"
-          @click="changeDarkMode"
-        >
-          Dark
-        </v-btn> -->
       </div>
       <v-btn v-else @click="isDrawerActive = !isDrawerActive">
         <i class="material-icons"> menu </i>
@@ -81,13 +71,16 @@ onBeforeUnmount(() => {
           <i class="material-icons"> help </i> {{ $t('footer.contact') }}
         </v-list-item>
       </a>
-      <v-switch
-        hide-details
-        color="yellow"
-        label="Dark mode"
-        v-model="isDarkMode"
-        @click="changeDarkMode"
-      />
+
+      <v-divider />
+
+      <h4 class="mt-4 settings-title-drawer text-center">Settings</h4>
+      <v-list-item>
+        <DarkModeSwitch class="px-3" />
+      </v-list-item>
+      <v-list-item>
+        <LanguageSelector class="py-1" />
+      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
@@ -108,14 +101,14 @@ header
       transform: scale(1.2, 1.2)
   .navbar-link
     color: #000
-  .settings-button
-    color: red
 
 .v-navigation-drawer
   padding-top: 1rem
   a
     color: black
     text-decoration: none
+  .settings-title-drawer
+    font-size: 1.2rem
   .v-list-item
     :deep(.v-list-item__content)
       display: flex

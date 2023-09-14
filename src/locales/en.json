@@ -56,7 +56,11 @@
   },
   "global": {
     "current": "Current",
+    "idiom": " Language",
+    "language": "Language",
     "other": "Others",
+    "selectLanguage": "Select a language",
+    "settings": "Settings",
     "visitWebPage": "Visit webpage"
   },
   "languages": {

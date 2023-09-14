@@ -56,7 +56,11 @@
   },
   "global": {
     "current": "actualidad",
+    "idiom": "Idioma",
+    "language": "Lenguaje",
     "other": "Otros",
+    "selectLanguage": "Selecciona un lenguaje",
+    "settings": "Configuraciones",
     "visitWebPage": "Visitar página web"
   },
   "languages": {
