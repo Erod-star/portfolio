@@ -36,7 +36,7 @@ const otherSkills = ['github.svg', 'gitlab.svg', 'figma.svg', 'aws.svg']
       </div>
 
       <div class="skills" data-aos="fade-up">
-        <h3 class="skills__title">Other</h3>
+        <h3 class="skills__title">{{ $t('global.other') }}</h3>
         <div class="skills__container">
           <SkillCard v-for="skill in otherSkills" :imgName="skill" />
         </div>

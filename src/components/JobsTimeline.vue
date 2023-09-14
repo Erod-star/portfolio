@@ -49,7 +49,7 @@ onBeforeUnmount(() => {
             <li v-for="highlight in job.highlights">{{ highlight }}</li>
           </ul>
           <div v-if="job.technologies" class="timeline-item__chips">
-            <h3 class="my-2">Tech stack</h3>
+            <h3 class="my-2">{{ $t('experience.techStach') }}</h3>
             <v-chip
               v-for="(technology, techIndex) in job.technologies"
               data-aos="fade-up"
@@ -62,7 +62,9 @@ onBeforeUnmount(() => {
           </div>
           <div v-if="job.href" class="d-flex justify-end w-100 mt-8">
             <a :href="job.href" target="_blank">
-              <v-btn variant="outlined" rounded="lg" :color="job.color">Visit webpage</v-btn>
+              <v-btn variant="outlined" rounded="lg" :color="job.color">{{
+                $t('global.visitWebPage')
+              }}</v-btn>
             </a>
           </div>
         </div>

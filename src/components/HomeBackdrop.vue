@@ -15,15 +15,17 @@ const downloadCv = () => {
 <template>
   <div class="home-backdrop d-flex flex-column justify-center align-center">
     <div class="home-backdrop__text d-flex flex-column justify-center align-center">
-      <span>Hello, I'm</span>
+      <span>{{ $t('salute.hello') }}</span>
       <h1 data-aos="zoom-in" data-aos-duration="2000">Erodstar</h1>
       <p data-aos="fade-right" data-aos-duration="1500" data-aos-delay="1000">
-        but my real name is <strong>Edson Rodríguez</strong>
+        {{ $t('salute.butMyRealNameIs') }} <strong>Edson Rodríguez</strong>
       </p>
     </div>
 
     <div class="d-flex justify-end mt-8 mb-5">
-      <v-btn variant="outlined" rounded="lg" @click="downloadCv">Download resume</v-btn>
+      <v-btn variant="outlined" rounded="lg" @click="downloadCv">{{
+        $t('salute.downloadResume')
+      }}</v-btn>
     </div>
   </div>
 </template>

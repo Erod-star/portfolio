@@ -1,0 +1,74 @@
+{
+  "about": {
+    "about": "Acerca de",
+    "aboutMe": "Acerca de mí",
+    "aptitudes": {
+      "aptitudes": "Aptitudes",
+      "fifth": "Nivel de inglés B2",
+      "first": "Desarrollar de software \"middle\"",
+      "fourth": "Trabajo en equipo",
+      "second": "Manejo de frameworks para el front-end",
+      "third": "Voluntad de aprender"
+    },
+    "description": "¡Hola! Mi nombre es Edson Arturo Rodríguez Govea y soy un Full Stack Developer con una gran pasión por construir sitios web hermosos e interactivos. Tengo un fuerte conocimiento tanto del desarrollo front-end como del desarrollo back-end, y estoy bastante emocionado poner en práctica mis habilidades en un ambiente profesional. ¡Soy una persona de aprendizaje rápido y que le gusta trabajar en equipo, y de verdad estoy bastante seguro que puedo llegar a ser un activo valioso para cualquier equipo de desarrollo web!",
+    "interests": {
+      "interests": "Intereses",
+      "singlePageApplications": "Aplicaciones \"Single page\"",
+      "videogames": "Videojuegos",
+      "webDevelopment": "Desarrollo web",
+      "workWithTheBestPractices": "Tabajar con las mejore prácticas "
+    }
+  },
+  "experience": {
+    "experience": "Experiencia",
+    "freeway": {
+      "description": "Freeway es una empresa emergente enfocada en el desarrollo de aplicaciones móviles para el transporte de fletes utilizando la metodología de desarrollo de software Scrum.",
+      "highlights": {
+        "developmentOfAMobile": "Desarrollo de una aplicación móvil utilizando el framework Flutter para la aplicación y consumiendo información a través de queries de GraphQL en donde, un CRUD enfocado a servicios de transporte fue creado. En adición a esto, debiudo al hecho de ser team lead participe en dar retroalimentación a otros desarrolladores haciendo code reviews, sesiones de pair coding  o simplemente conversando con ellos para encontrar las mejores soluciones a los problemas que se presentaban",
+        "iServedAs": "Contribuí como jefe de un equipo de desarrollo enfocado al desarrollo móvil, usando de manera activa la metodología Scrum preparando Sprint plannings, Sprint retrospectives así como creando tickets para posibles nuevas features o issues"
+      }
+    },
+    "hmh": {
+      "description": "Compañía de software enfocada en el desarrollo web utilizando React.js y Vue.js",
+      "highlights": {
+        "participatedInThe": "Participe en el desarrollo de una aplicación web para el transporte de medicamentos donde trabaje con la “Google Maps Platform API” creando Pollylines, interfaces de usuario y seguimiento en tiempo real de los productos. Esto implementando la GMaps API así como Vue.js y Sass",
+        "reMake": "Ayude a mejorar las interfaces de usuario de una aplicación de punto de venta, esta nueva experiencia fue desarrollado utilizando Vue.js y SASS utilizando la metodología BEM"
+      }
+    },
+    "sonatafy": {
+      "description": "Desarrollo y mantenimiento de herramientas administrativas por parte del cliente utilizando pruebas automatizadas junto con un manejo ágil de comunicaciones entre sistemas",
+      "highlights": {
+        "creationOf": "Creación de endopoints a través de Node.js consumiendo información tanto desde una base de datos de PostgreSQL",
+        "developmentOf": "Desarrollo de una librería de componentes personalizada para el cliente desde cero utilizando Vue2 (Options API), tomando como referencia las librerías más populares en el mercado, como Vuetify o Bulma, con un enfoque en las necesidades y preferencias del cliente"
+      }
+    },
+    "techStach": "Stack técnico",
+    "universityOfColima": {
+      "description": "Me gradué como “Ingeniero de Software” después de estudiar un periodo de 8 semestres en la Facultad de Telemática de la Universidad de Colima",
+      "universityOfColima": "Universidad de Colima"
+    }
+  },
+  "footer": {
+    "contact": "Contacto",
+    "createdBy": "Creado por Erodstar con mucho",
+    "poweredBy": "Desarrollado con",
+    "rightsReserved": "Derechos reservados"
+  },
+  "global": {
+    "current": "actualidad",
+    "other": "Otros",
+    "visitWebPage": "Visitar página web"
+  },
+  "languages": {
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "months": {
+    "aug": "AGO"
+  },
+  "salute": {
+    "butMyRealNameIs": "pero mi verdadero nombre es",
+    "downloadResume": "Descargar curriculum",
+    "hello": "Hola, soy"
+  }
+}
