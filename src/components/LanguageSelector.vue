@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { watch, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import usePortfolio from '../composables/usePortfolio'
 
