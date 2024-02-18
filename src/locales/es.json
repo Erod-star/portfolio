@@ -35,6 +35,20 @@
         "reMake": "Ayude a mejorar las interfaces de usuario de una aplicación de punto de venta, esta nueva experiencia fue desarrollado utilizando Vue.js y SASS utilizando la metodología BEM"
       }
     },
+    "itj": {
+      "description": "Trasbaje como desarrollador fullstack en esta consultora para el cliente \"XiltriX\" utilizando tecnologías como React, Typescript, Node y Redux para desarrollar una pagina web para el monitoreo de dispositivos de laboratorio",
+      "highlights": {
+        "migrated": "Ayude a la migración del código \"legacy\" de una aplicaci[on web a una versión actualizada en donde se resolvieron problemas de vulnerabilidades, paquetes obsoletos  y mejoras a la estructura de código con el objetivo de hacerlo más accesible y fácil de leer para cualquier persona que lo modifique",
+        "prepared": "Ayude a la planeación de la nueva aplicación web decidiendo que tecnologías utilizar con base a las nuevas tendencias del desarrollo web"
+      }
+    },
+    "rocket": {
+      "description": "Trabaje como frontend developer en esta consultora para el cliente \"Principal Financial Group México\" utilizando tecnologías como React, TypeScript y Sass para manejar un sitio web de fondos de inversión",
+      "highlights": {
+        "assistedIn": "Ayude en la planeación de tareas para cada sprint, teniendo reuniones de manera regular con otros miembros del equipo de desarrollo así como con los stakeholders para crear tareas bien refinadas y faciles de entender",
+        "createdComp": "Creee componentes desde cero utilizando como base una librería proveida por el cliente, el objetivo de estos nuevos componentes era expandir funcionalidad y darles mejoras en la parte visual"
+      }
+    },
     "sonatafy": {
       "description": "Desarrollo y mantenimiento de herramientas administrativas por parte del cliente utilizando pruebas automatizadas junto con un manejo ágil de comunicaciones entre sistemas",
       "highlights": {

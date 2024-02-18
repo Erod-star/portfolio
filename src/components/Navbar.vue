@@ -74,7 +74,7 @@ onBeforeUnmount(() => {
 
       <v-divider />
 
-      <h4 class="mt-4 settings-title-drawer text-center">Settings</h4>
+      <h4 class="mt-4 settings-title-drawer text-center">{{ $t('global.settings') }}</h4>
       <v-list-item>
         <DarkModeSwitch class="px-3" />
       </v-list-item>

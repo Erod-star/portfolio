@@ -35,6 +35,20 @@
         "reMake": "Re-make UX-UI in point of sale application, this new experience was developed using Vue.js and SASS using the BEM methodology"
       }
     },
+    "itj": {
+      "description": "I worked as a fullstack developer at this consultancy for the client \"XiltriX\", using React, TypeScript, Node, Redux, and other technologies to handle a device monitoring website.",
+      "highlights": {
+        "migrated": "Migrated a legacy application to an updated version solving vulnerabilities issues, deprecated packages and upgrade the code structure in order to make it more easy to understand and to mantain",
+        "prepared": "Prepared the approach for the new version of the project visualizing the new tendencies of the development software"
+      }
+    },
+    "rocket": {
+      "description": "I worked as a frontend developer at this consultancy for \"Principal Financial Group Mexico,\" using React, TypeScript, and Sass technologies to handle an Investment Funds website.",
+      "highlights": {
+        "assistedIn": "I assisted in planning tasks for each sprint, holding regular meetings with other members of the development team as well as stakeholders to ensure well-refined and easily developable tasks.",
+        "createdComp": "I created components from scratch using a library established by the client as a base, adding extra functionalities, new styling approaches, etc."
+      }
+    },
     "sonatafy": {
       "description": "Management and update of the customer administrative tools, based on automated tests and agile communications between systems.",
       "highlights": {
