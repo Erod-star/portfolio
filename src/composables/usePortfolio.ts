@@ -25,7 +25,8 @@ const usePortfolio = () => {
         t('experience.itj.highlights.prepared')
       ],
       img: 'itjuana.jpg',
-      date: `DIC 2023 - ${t('global.current')}`,
+      // date: `DIC 2023 - ${t('global.current')}`,
+      date: `NOV 2023 - ${t('global.current')}`,
       href: 'https://itj.com/',
       technologies: [
         'React',
@@ -41,19 +42,19 @@ const usePortfolio = () => {
         'AWS'
       ]
     },
-    {
-      color: 'red',
-      company: 'Rocket code',
-      description: t('experience.rocket.description'),
-      highlights: [
-        t('experience.rocket.highlights.assistedIn'),
-        t('experience.rocket.highlights.createdComp')
-      ],
-      img: 'rocket-code.jpg',
-      date: `OCT 2023 - DIC 2023`,
-      href: 'https://therocketcode.com/',
-      technologies: ['React', 'Sass', 'TypeScript', 'Figma', 'JIRA', 'i18n']
-    },
+    // {
+    //   color: 'red',
+    //   company: 'Rocket code',
+    //   description: t('experience.rocket.description'),
+    //   highlights: [
+    //     t('experience.rocket.highlights.assistedIn'),
+    //     t('experience.rocket.highlights.createdComp')
+    //   ],
+    //   img: 'rocket-code.jpg',
+    //   date: `OCT 2023 - DIC 2023`,
+    //   href: 'https://therocketcode.com/',
+    //   technologies: ['React', 'Sass', 'TypeScript', 'Figma', 'JIRA', 'i18n']
+    // },
     {
       color: 'blue',
       company: 'Sonatafy',
@@ -63,7 +64,8 @@ const usePortfolio = () => {
         t('experience.sonatafy.highlights.creationOf')
       ],
       img: 'sonatafy-logo.jpg',
-      date: `NOV 2022 - OCT 2023`,
+      // date: `NOV 2022 - OCT 2023`,
+      date: `NOV 2022 - NOV 2023`,
       href: 'https://sonatafy.com/',
       technologies: [
         'Vue',
