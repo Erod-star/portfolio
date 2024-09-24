@@ -5,7 +5,7 @@
     "aptitudes": {
       "aptitudes": "Aptitudes",
       "fifth": "Nivel de inglés B2",
-      "first": "Desarrollar de software \"middle\"",
+      "first": "Desarrollador fullstack",
       "fourth": "Trabajo en equipo",
       "second": "Manejo de frameworks para el front-end",
       "third": "Voluntad de aprender"
@@ -24,7 +24,7 @@
     "freeway": {
       "description": "Freeway es una empresa emergente enfocada en el desarrollo de aplicaciones móviles para el transporte de fletes utilizando la metodología de desarrollo de software Scrum.",
       "highlights": {
-        "developmentOfAMobile": "Desarrollo de una aplicación móvil utilizando el framework Flutter para la aplicación y consumiendo información a través de queries de GraphQL en donde, un CRUD enfocado a servicios de transporte fue creado. En adición a esto, debiudo al hecho de ser team lead participe en dar retroalimentación a otros desarrolladores haciendo code reviews, sesiones de pair coding  o simplemente conversando con ellos para encontrar las mejores soluciones a los problemas que se presentaban",
+        "developmentOfAMobile": "Desarrollo de una aplicación móvil utilizando el framework Flutter para la aplicación y consumiendo información a través de queries de GraphQL con base a un CRUD enfocado a servicios de transporte. En adición a esto, debido al hecho de ser team lead participe en dar retroalimentación a otros desarrolladores haciendo code reviews, sesiones de pair coding  o simplemente conversando con ellos para encontrar las mejores soluciones a los problemas que se presentaban",
         "iServedAs": "Contribuí como jefe de un equipo de desarrollo enfocado al desarrollo móvil, usando de manera activa la metodología Scrum preparando Sprint plannings, Sprint retrospectives así como creando tickets para posibles nuevas features o issues"
       }
     },
@@ -36,9 +36,9 @@
       }
     },
     "itj": {
-      "description": "Trasbaje como desarrollador fullstack en esta consultora para el cliente \"XiltriX\" utilizando tecnologías como React, Typescript, Node y Redux para desarrollar una pagina web para el monitoreo de dispositivos de laboratorio",
+      "description": "Trabaje como desarrollador fullstack en esta consultora para el cliente \"XiltriX\" utilizando tecnologías como React, Typescript, Node y Redux para desarrollar una página web para el monitoreo de dispositivos de laboratorio",
       "highlights": {
-        "migrated": "Ayude a la migración del código \"legacy\" de una aplicaci[on web a una versión actualizada en donde se resolvieron problemas de vulnerabilidades, paquetes obsoletos  y mejoras a la estructura de código con el objetivo de hacerlo más accesible y fácil de leer para cualquier persona que lo modifique",
+        "migrated": "Ayude a la migración del código \"legacy\" de una aplicación web a una versión actualizada en donde se resolvieron problemas de vulnerabilidades, paquetes obsoletos  y mejoras a la estructura de código con el objetivo de hacerlo más accesible y fácil de leer para cualquier persona que lo modifique",
         "prepared": "Ayude a la planeación de la nueva aplicación web decidiendo que tecnologías utilizar con base a las nuevas tendencias del desarrollo web"
       }
     },
@@ -52,7 +52,7 @@
     "sonatafy": {
       "description": "Desarrollo y mantenimiento de herramientas administrativas por parte del cliente utilizando pruebas automatizadas junto con un manejo ágil de comunicaciones entre sistemas",
       "highlights": {
-        "creationOf": "Creación de endopoints a través de Node.js consumiendo información tanto desde una base de datos de PostgreSQL",
+        "creationOf": "Creación de endopoints a través de Node.js consumiendo información desde una base de datos de PostgreSQL",
         "developmentOf": "Desarrollo de una librería de componentes personalizada para el cliente desde cero utilizando Vue2 (Options API), tomando como referencia las librerías más populares en el mercado, como Vuetify o Bulma, con un enfoque en las necesidades y preferencias del cliente"
       }
     },
@@ -88,5 +88,8 @@
     "butMyRealNameIs": "pero mi verdadero nombre es",
     "downloadResume": "Descargar curriculum",
     "hello": "Hola, soy"
+  },
+  "settings": {
+    "darkMode": "Modo oscuro"
   }
 }

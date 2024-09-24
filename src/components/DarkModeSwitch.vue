@@ -7,7 +7,7 @@ const { changeDarkMode, isDarkMode } = usePortfolio()
   <v-switch
     hide-details
     color="yellow"
-    label="Dark mode"
+    :label="$t('settings.darkMode')"
     v-model="isDarkMode"
     @click="changeDarkMode"
   />

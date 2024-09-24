@@ -88,5 +88,8 @@
     "butMyRealNameIs": "but my real name is",
     "downloadResume": "Download resume",
     "hello": "Hello, I'm"
+  },
+  "settings": {
+    "darkMode": "Dark mode"
   }
 }
