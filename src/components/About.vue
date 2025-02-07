@@ -28,7 +28,6 @@ const { isDarkMode, getImageUrl } = usePortfolio()
           <div class="about-list mt-3">
             <h4>{{ $t('about.aptitudes.aptitudes') }}</h4>
             <ul>
-              <li>{{ $t('about.aptitudes.first') }}</li>
               <li>{{ $t('about.aptitudes.second') }}</li>
               <li>{{ $t('about.aptitudes.third') }}</li>
               <li>{{ $t('about.aptitudes.fourth') }}</li>
