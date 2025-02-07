@@ -4,7 +4,7 @@
     "aboutMe": "Acerca de mí",
     "aptitudes": {
       "aptitudes": "Aptitudes",
-      "fifth": "Nivel de inglés B2",
+      "fifth": "Nivel de inglés C2",
       "first": "Desarrollador fullstack",
       "fourth": "Trabajo en equipo",
       "second": "Manejo de frameworks para el front-end",
@@ -38,8 +38,12 @@
     "itj": {
       "description": "Trabaje como desarrollador fullstack en esta consultora para el cliente \"XiltriX\" utilizando tecnologías como React, Typescript, Node y Redux para desarrollar una página web para el monitoreo de dispositivos de laboratorio",
       "highlights": {
-        "migrated": "Ayude a la migración del código \"legacy\" de una aplicación web a una versión actualizada en donde se resolvieron problemas de vulnerabilidades, paquetes obsoletos  y mejoras a la estructura de código con el objetivo de hacerlo más accesible y fácil de leer para cualquier persona que lo modifique",
-        "prepared": "Ayude a la planeación de la nueva aplicación web decidiendo que tecnologías utilizar con base a las nuevas tendencias del desarrollo web"
+        "first": "Ayude a crear un nuevo proyecto desde cero basado en un proyecto heredado que la compañía tenía integrando nuevas tecnologías seleccionadas con base en las nuevas tendencias del desarrollo de software.",
+        "second": "Integré un módulo enfocado en mapas utilizando la libreria Leaflet.js para visualizar y agregar piezas de equipo a un plano previamente subido a nuestro sitio web por los usuarios.",
+        "third": "Integré la metodología \"Test Driven Development\" (TDD) para crear diferentes módulos y funcionalidades basadas en las historias de usuario solicitadas por nuestros gerentes.",
+        "fourth": "Ayudé a construir la lógica para la comunicación entre el frontend y el backend usando \"Socket.io\" para recuperar datos en tiempo real de AWS.",
+        "fifth": "Integré la biblioteca “TanStack Query” para mejorar la forma en que el estado de las solicitudes HTTP y las promesas se maneja desde el frontend utilizando también la capacidad de esta biblioteca para almacenar datos en el caché del sitio web para que la experiencia del usuario sea más rápida administrando un periodo de tiempo en el que estos datos que se actualizan automáticamente.",
+        "sixth": "Ayudé a crear y mantener diferentes endpoints en el backend utilizando las pautas establecidas por Nest.js creando \"guards\" personalizados para validar los roles de los usuarios, la autenticación y más. \nTambién implementé la integración de TypeORM para hacer mutaciones o consulta de información a la base de datos, la cual esta desarrollada en PostgreSQL."
       }
     },
     "rocket": {

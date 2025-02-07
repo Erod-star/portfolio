@@ -4,7 +4,7 @@
     "aboutMe": "About me",
     "aptitudes": {
       "aptitudes": "Aptitudes",
-      "fifth": "English level B2",
+      "fifth": "English level C2",
       "first": "Intermediate level developer",
       "fourth": "Team player",
       "second": "Front-end frameworks managment",
@@ -38,8 +38,12 @@
     "itj": {
       "description": "I worked as a fullstack developer at this consultancy for the client \"XiltriX\", using React, TypeScript, Node, Redux, and other technologies to handle a device monitoring website.",
       "highlights": {
-        "migrated": "Migrated a legacy application to an updated version solving vulnerabilities issues, deprecated packages and upgrade the code structure in order to make it more easy to understand and to mantain",
-        "prepared": "Prepared the approach for the new version of the project visualizing the new tendencies of the development software"
+        "first": "Created a new project from scratch based on a legacy project that the company had integrating new technologies based on the new tendencies of the software development.",
+        "second": "Integrated a map module using Leaflet.js to visualize and to add pieces of equipment to a blueprint previously updated by the users.",
+        "third": "Integrated the “Test Driven Development” (TDD) methodology  to create different modules and functionalities based on the user stories requested by our managers.",
+        "fourth": "Helped to build the logic for the communication of the frontend and the backend using \"Socket.io to retrieve real time data from AWS.",
+        "fifth": "Integrated the “TanStack Query” library in order to enhance the way the state of the http requests and promises are handled in the frontend using also the ability of this library to store data on the cache of the website to make the user experience more faster managing a stale time of this data that automatically refresh after an established period of time.",
+        "sixth": "Helped to create and maintain different endpoints on the backend using the guidelines of nest.js creating custom “guards” to validate user roles, authentication and more. Also implemented the TypeORM integration to do mutations to the database built in PostgreSQL."
       }
     },
     "rocket": {

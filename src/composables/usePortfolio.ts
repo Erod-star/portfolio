@@ -21,8 +21,12 @@ const usePortfolio = () => {
       company: 'ITJ',
       description: t('experience.itj.description'),
       highlights: [
-        t('experience.itj.highlights.migrated'),
-        t('experience.itj.highlights.prepared')
+        t('experience.itj.highlights.first'),
+        t('experience.itj.highlights.second'),
+        t('experience.itj.highlights.third'),
+        t('experience.itj.highlights.fourth'),
+        t('experience.itj.highlights.fifth'),
+        t('experience.itj.highlights.sixth')
       ],
       img: 'itjuana.jpg',
       // date: `DIC 2023 - ${t('global.current')}`,
